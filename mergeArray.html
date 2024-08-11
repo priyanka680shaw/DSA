@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Merge  two array</h1>
+    <script>
+        const data1 = [14 ,28 , 42 ,56, 70 , 84 ,98 , 112 ,126 , 140]
+        const data2 = [13, 26 ,39, 52 ,65,78,91,104, 117, 130] 
+        let mergeArrayyData = []
+        const length = data1.length + data2.length
+        console.log(length)
+
+
+        // for(let i=0; i<length ; i++){
+        //     mergeArrayyData[i] = data1[i]
+        // }
+        // let a = 0
+        // for(let i=data1.length+1 ; i<length ; i++){
+          
+        //     mergeArrayyData[i] = data2[a];
+        //     a++;
+        // }
+
+        // const sortArray = mergeArrayyData.sort()
+        // console.log(sortArray)
+
+        //or using sprade operator 
+        mergeArrayyData = [...data1 , ...data2]
+        mergeArrayyData.reverse()
+        console.log(mergeArrayyData)
+        </script>
+</body>
+</html>

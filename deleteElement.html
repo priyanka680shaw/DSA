@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DELETING AN ELEMENT </h1>
+   
+    <script>
+        // const data = [55 , 88 ,90 , 23, 55, 12 , 34 , 78, 90 ,30]
+        // const position = 3;
+        // const ele = 567;
+        // for(let i=0; i< data.length; i++){
+        //     document.write("(" , i , ") ", data[i] , "  ,  ")
+        //     if(i == position){
+        //         data[i] = ele
+        //     }
+        // } 
+        
+        // document.write( "new data" , data)
+        function deleteHandler(){
+            const data = [55 , 88 ,90 , 23, 55, 12 , 34 , 78, 90 ,30]
+            const position = document.getElementById("position").value
+            // const ele = document.getElementById("ele").value
+            //remove and add element
+            // for(let i=0; i<data.length ; i++){
+            //     document.write("(" , i , ") ", data[i] , "  ,  ")
+            //     if(i == position){
+            //     data[i] = ele
+            // }
+            // }
+            //only remove Element
+            // for(let i=position ; i<data.length; i++){
+            //     data[i] = data[i+1]
+            // }
+            // document.write("new data" , data)
+            //splice method to remove 
+            data.splice(2, 1)
+            document.write("new data" , data)
+
+        }
+
+    </script>
+     <input type="text" placeholder="position" id = "position"/>
+     <!-- <input type="text" placeholder="element" id = "ele"/> -->
+     <button onclick="deleteHandler()">Submit</button>
+   
+</body>
+</html>

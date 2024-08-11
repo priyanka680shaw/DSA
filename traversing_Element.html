@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript DSA</h1>
+    <script>
+        //1.Array Traversing
+       const data = [2,3, 4, 8,90,78,5,43,32] 
+        document.write("Traversing of an Element : ")
+        for(let i=0 ; i<data.length; i++){
+            document.write( data[i] , " , ")
+        }
+      
+        function getElement(){
+            const el = document.getElementById("element").value
+            if(el < data.length){
+                alert(data[el])
+            }
+            else{
+                alert("entered value is much gretter the the data ")
+            }
+           
+        }
+
+    </script>
+
+    <input type="text" id = "element"/>
+    <button onclick="getElement()">Submit</button>
+
+    
+</body>
+</html>

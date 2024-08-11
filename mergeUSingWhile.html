@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Merge Array using while loop and sort them as well !</h1>
+    <script>
+        const data1 = [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+        const data2 = [15, 30, 45, 60, 75, 90, 105, 120, 135, 150]
+        let mergedArray = []
+        let d1 =0;
+        let d2 = 0;
+        let m = 0;
+        while(d1<=data1.length && d2<data2.length){
+            if(data1[d1]<data2[d2]){
+                mergedArray[m] = data1[d1]
+                d1++
+            }
+            else{
+                mergedArray[m] = data2[d2]
+                d2++
+            }
+            m++;   
+            
+        }
+        console.log(mergedArray)
+        </script>
+</body>
+</html>

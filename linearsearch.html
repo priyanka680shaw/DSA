@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Linear Search !</h1>
+    <script>
+            function linearSearch(){
+                const data = [2,3, 4, 8,90,78,5,43,32] 
+                 const searchEle = document.getElementById("searchEle").value
+                 for(let i = 0; i<data.length ; i++){
+                    if(data[i]===parseInt(searchEle)){
+                       return document.write(data[i] , " at index : " , i)
+                    }
+                 }
+                 return document.write("enter Valid Data No ")
+            }
+    </script>
+    <input type="text" placeholder="enter search value" id = "searchEle"/>
+    <button onclick="linearSearch()">Submit</button>
+</body>
+</html>

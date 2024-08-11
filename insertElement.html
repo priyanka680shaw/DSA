@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Inserting Element </h1>
+
+
+    <script>
+        // const data = [12, 33, 34, 55, 66, 78, 90]
+        // const newEle = 10
+        // const position = 4
+        // // reverse loop
+        // for(let i = data.length-1; i>=0 ; i--){
+        //     document.write(data[i],  "  , ")
+        //     if(i>=position){
+        //         data[i+1] = data[i]
+        //         if(i==position){
+        //             data[i] = newEle
+        //         }
+        //     }
+
+        // } 
+        // document.write("new Data" , data)
+
+
+        function insertElement() {
+            const data = [12, 33, 34, 55, 66, 78, 90]
+            const newEle = document.getElementById("newEle").value
+            const position = document.getElementById("position").value
+            // reverse loop
+            // for (let i = data.length - 1; i >= 0; i--) {
+            //     document.write(data[i], "  , ")
+            //     if (i >= position) {
+            //         data[i + 1] = data[i]
+            //         if (i == position) {
+            //             data[i] = newEle
+            //         }
+            //     }
+
+            // } 
+            //splice(position , delete , insertData) inclusive (0 , 1 , (2, 3) , 4, 5,)
+            data.splice(2, 2 , 3333)
+            console.log("Inserted Data : ", data)
+
+        }
+
+
+    </script>
+    <input type="text" placeholder="Enter position" id="position" />
+    <input type="text" placeholder="Enter value" id="newEle" />
+    <button onclick="insertElement()">Submit</button>
+
+</body>
+
+</html>
